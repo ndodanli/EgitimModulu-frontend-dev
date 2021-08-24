@@ -1,0 +1,13 @@
+.em-striped {
+  background-color: #f2f5f5;
+}
+.l-s-1 {
+  color: #ffffff !important;
+  border-top-color: #ffffff !important;
+}
+.l-s-1:hover {
+  background-color: #ffffff !important;
+}
+.l-s-2 {
+  border: none !important;
+}

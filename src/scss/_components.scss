@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+// Here you can add other styles
+.textarea-resizable {
+  resize: both;
+}
+.textarea-not-resizable {
+  resize: none;
+}
+.footer {
+  justify-content: center;
+}
+
+/** PAGİNATE **/
+.paginate-flex {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.2em;
+  padding: 0;
+  margin: 0;
+}
+.paginate-items {
+  padding: 0.4em 1em 0.4em 1em;
+  margin: 0;
+}
+.paginate-item {
+  text-align: center;
+  padding: 0.4em 0.7em 0.4em 0.7em;
+  color: $navyblue;
+  border: 1px solid transparent;
+  border-radius: 0.8em;
+  margin: 0;
+  transition: all 0.3s ease;
+  &:hover {
+    color: $claret-red;
+    text-decoration-style: none;
+  }
+}
+.paginate-item.selected {
+  background-color: $navyblue;
+  color: white;
+}
+.paginate-dots {
+  padding: 0.5em;
+}
+.paginate-next.disabled {
+  pointer-events: none;
+  border: 1px solid transparent;
+  color: rgba(17, 17, 73, 0.4);
+}
+.paginate-previous.disabled {
+  pointer-events: none;
+  border: 1px solid transparent;
+  color: rgba(17, 17, 73, 0.4);
+}
+
+/** BUTTONS **/
+
+.detail-button {
+  border: solid 1px $navyblue;
+  color: $navyblue;
+  &:hover {
+    background-color: $navyblue;
+    color: white;
+  }
+}
+.button {
+  border-radius: 1px;
+}
+
+.blue-button {
+  border: solid 1px $navyblue;
+  color: $navyblue;
+  &:hover {
+    background-color: $navyblue;
+    color: white;
+  }
+}
+
+.red-button {
+  border: solid 1px $claret-red;
+  color: $claret-red;
+  &:hover {
+    background-color: $claret-red;
+    color: white;
+  }
+}
+
+.tabbed-btn-card {
+  font-size: 1rem;
+  color: $navyblue;
+  margin: 0 0.3rem 0 0.01rem;
+  &:hover {
+    color: $claret-red;
+  }
+  &.focused {
+    outline: 0px;
+    background-color: lighten($light-gray, 3.2);
+    border-bottom: solid 4px $navyblue;
+  }
+}
+.tabbed-button-modal {
+  font-size: 1.4em;
+  color: $navyblue;
+  margin-top: 5px;
+  margin-left: 5px;
+  cursor: none;
+  &:hover {
+    color: $claret-red;
+  }
+  &.focused {
+    outline: 0px;
+    background-color: $light-gray;
+    border-left: solid 4px $claret-red;
+  }
+}
+
+//Modal İptal Butonu
+.btn-1 {
+  background: $claret-red;
+  border: 1px solid darken($claret-red, 4%);
+  color: white;
+  &:hover {
+    background: darken($claret-red, 1.5%);
+    border: 1px solid rgba(black, 0.05);
+    color: lighten($claret-red, 50%);
+    text-decoration: none;
+    text-shadow: -1px -1px 0 darken($claret-red, 9%);
+  }
+}
+
+//Modal Kaydet
+.btn-2 {
+  background: white;
+  border: 1px solid darken($claret-red, 4%);
+  color: $claret-red;
+
+  &:hover {
+    background: white;
+    border: 1px solid rgba(black, 0.05);
+    color: $claret-red;
+    text-decoration: none;
+  }
+}
+
+.lbbtn {
+  background: white;
+  border: 1px solid darken($claret-red, 4%);
+  color: $claret-red;
+  &:hover {
+    background: white;
+    border: 1px solid rgba(black, 0.05);
+    color: $claret-red;
+    text-decoration: none;
+    transition: all 200ms linear;
+  }
+}
+//input updated
+.is-updated {
+  border-color: #f7754a;
+  padding-right: calc(1.5em + 0.75rem);
+  background-image: url("../assets/icons/warning-icon.svg");
+  background-repeat: no-repeat;
+  background-position: right calc(0.375em + 0.1875rem) center;
+  background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+  &:focus {
+    border-color: #f7754a;
+    box-shadow: 0 0 0 0.1rem rgba(247, 117, 74, 0.25);
+  }
+}
+.tel-area {
+  border-color: #050505;
+  // padding-right: calc(1.5em + 0.75rem);
+  background-image: url("../assets/icons/warning-icon.svg");
+  background-repeat: no-repeat;
+  background-position: left calc(0.375em + 0.1875rem) center;
+  background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+
+.is-updated-text {
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 80%;
+  color: #f7a64a;
+}
+.is-invalid-text {
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 80%;
+  color: #d81b1b;
+}
+.hide {
+  visibility: hidden;
+}
+//slider form
+.tabbed-form {
+  margin: 0;
+  transition: transform 0.8s ease;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 1.25rem;
+  padding-left: 1.25rem;
+}
+
+//modal
+.em-modal-hide {
+  display: block !important;
+  visibility: hidden;
+}
+
+.btn-active {
+  border-bottom: 1px #ffc107 solid;
+}
+
+//profile
+.input-passive {
+  transition: background-color 300ms linear;
+  background-color: rgba(235, 237, 239, 0.6);
+}
+.input-active {
+  transition: background-color 500ms linear;
+  background-color: rgb(255, 255, 255);
+}
+.button-active {
+  animation: fade-in 500ms linear;
+  background-color: rgb(255, 255, 255);
+}
+.profile {
+  display: grid;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+//Navbar
+.homenav {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.01), 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+//kayıtol butonu
+.signbtn {
+  background: $navyblue;
+  border: 1px solid darken($navyblue, 4%);
+  color: $navyblue;
+  &:hover {
+    background: darken($navyblue, 1.5%);
+    border: 1px solid rgba(black, 0.05);
+    color: lighten($navyblue, 50%);
+    text-decoration: none;
+    text-shadow: -1px -1px 0 darken($navyblue, 9%);
+    //transition: all 250ms linear;
+  }
+}
+//girişyap butonu
+.loginbtn {
+  background: $light-gray;
+  border: 1px solid darken($navyblue, 4%);
+  color: $navyblue;
+
+  &:hover {
+    background: $light-gray;
+    border: 1px solid rgba(black, 0.05);
+    color: $navyblue;
+    text-decoration: none;
+    transition: all 200ms linear;
+  }
+}
+
+
+//Student 
+button:focus {
+    box-shadow: none !important;
+    outline-width: 0
+}
+.stucard {
+    border-radius: 1.1rem;
+    border-top-color: $light-orange !important
+}
+.sheader{
+    border: 0;
+    border-top: 0.8rem solid $light-orange !important;
+    border-radius: 1.1rem !important
+}
+.nheader{
+  border: 0;
+  border-radius: 1.1rem !important
+}
+.navcard{
+  border: 0;
+  border-left: 0.3rem solid $light-orange !important;
+  border-top: 0.3rem solid $light-orange !important;
+  border-radius: 1.1rem !important
+}
+.btn-outline-secondary {
+    border-radius: 2rem !important;
+    border: 2px solid $light-gray;
+
+    &:hover{
+      color: white !important;
+    }
+}
+
+.img-fluid {
+    width: 350px !important  
+}
+@media (max-width: 401px) {
+    .card {
+        width: unset
+    }
+}
+small {
+    letter-spacing: 2px
+}
+
+.jumbotron{
+   background-color: $light-blue;
+  border-radius: 1.1rem;
+}
+
+.menubtn {
+	background: white;
+	border-radius: 2rem;
+  //font-family: 'Comfortaa', cursive;
+
+  &:hover{
+    background:lighten($light-orange, 8%);
+    color: $orange;
+  }
+}
